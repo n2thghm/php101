@@ -2,8 +2,8 @@ services:
   server:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: docker/Dockerfile
     ports:
       - 80:80
     volumes:
-      - ./:/var/www/html
+      - ./application/:/var/www/html
